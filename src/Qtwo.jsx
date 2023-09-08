@@ -17,7 +17,6 @@ export default function Qtwo() {
       const floatNum = parseFloat(inputTypeValue);
       if (!isNaN(floatNum)) {
         const roundedValue = Math.max(Math.round(floatNum), 1);
-        console.log(roundedValue);
         setInputTypeValue(roundedValue.toString());
         columnTwoSelect(type, roundedValue.toString());
       } else {
@@ -59,7 +58,6 @@ export default function Qtwo() {
       setInputValue("");
     }
   };
-  console.log(type);
   const columnTwoSelect = (type, roundNum) => {
     let roundNumber =
       typeof roundNum == "object"
@@ -79,8 +77,6 @@ export default function Qtwo() {
       console.log("fibonacci", fibonacci);
     }
   };
-  console.log(inputTypeValue);
-  console.log(inputValue);
   const isPrime = (prime) => {
     if (prime <= 1) return false;
     if (prime <= 3) return true;
